@@ -35,3 +35,8 @@ class StudentResponse(StudentBase):
     id: int
 
     model_config = ConfigDict(from_attributes=True)
+
+
+class AIQuery(BaseModel):
+    """Schema for AI natural language queries."""
+    question: str
